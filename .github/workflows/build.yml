@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "FutureStepsHealthConnect.zip"
+      - "FutureStepsHealthConnect_v2.zip"
       - ".github/workflows/build.yml"
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
         run: |
           rm -rf project
           mkdir project
-          unzip -q FutureStepsHealthConnect.zip -d project
+          unzip -q FutureStepsHealthConnect_v2.zip -d project
 
       - name: Setup Java
         uses: actions/setup-java@v5
